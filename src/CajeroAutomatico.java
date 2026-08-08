@@ -226,9 +226,7 @@ public class CajeroAutomatico {
 
     // Método adicional de validación/cálculo reutilizado por ambas versiones de retiro
     static String validarRetiro(double monto, double comisionAplicable) {
-        if (monto <= 0) {
-            return "el monto debe ser mayor que Q0.00.";
-        }
+        if (monto <= 0)
         if (!esMultiploDeVeinte(monto)) {
             return "el monto debe ser múltiplo de Q20.00.";
         }
